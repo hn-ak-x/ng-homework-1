@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-homework1';
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  }
+
+  goToUsers() {
+    this.router.navigate(['users'])
+  }
+
+  goToPosts() {
+    this.router.navigate(['posts'])
+  }
 }

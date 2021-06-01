@@ -1,7 +1,6 @@
-<ul>
-  <li><a [routerLink]="['home']">home</a></li>
-  <li><a [routerLink]="['users']" >users</a></li>
-  <li><a [routerLink]="['posts']">posts</a></li>
-  <li>comments</li>
-</ul>
+<div class="header">
+  <div><button (click)="goToUsers()">users</button></div>
+  <div><button (click)="goToPosts()">posts</button></div>
+</div>
+
 <router-outlet></router-outlet>
